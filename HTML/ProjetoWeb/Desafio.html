@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Projeto</title>
+</head>
+<body>
+    <h1 id="inicio">O que aprendi sobre HTML</h1>
+    <hr />
+    <h2>Ìndice</h2>
+    <ul>
+        <li><a href="#textos">Textos em HTML</a></li>
+        <li><a href="#tags">O que são Tags</a></li>
+        <li><a href="#listas">Tipos de Listas</a></li>
+        <li><a href="#links">O que são Tags</a></li>
+        <li><a href="#about">O que são Tags</a></li>
+    </ul>
+
+    <h2 id="textos">Textos em HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+            <!-- Tag <h> Define o tamanho do titulo e subptitulos -->
+                <h1>DIO.me</h1>
+                <h2>Implemente o seu futuro global agora!</h2>
+        
+            <!-- Tag <p> Define parágrafo -->
+                <p>
+                    Domine as <strong><u>tecnologias</u></strong> utilizadas pelas empresas <mark>mais inovadoras do mundo</mark> e encare seu novo desafio profissional em comunidade com os melhores experts.
+                </p>
+        
+            <!-- Tag <blockquote> Define uma sitação dentro da pagina -->
+                <blockquote>
+                    <i>O jeito DIO._ para você ganhar mais destaques mais rápido no mercado.</i>
+                </blockquote>
+        
+                <h2>Aprenda tecnologias emergentes</h2>
+                <p>
+                    Os nossos cursos e progrmas de formação são criados em conjunto com especialistas das empresas mais inovadoras do mundo, aplicando uma metodologia para que você domine as tecnologias utilizadas no mercado e também mergulhe nas novas e mais atuais tecnologias que impactarão o futuro dos negócios digitais.
+                </p>
+        
+                <h2>Pratique com desafios de código</h2>
+                <p>
+                    Pontencializamos o seu talento e aprimoramos as suas habilidades de pensamento computacional e revolução de desafios reis através de experiências práticas de codificação em nossa plataforma personalizada e exclusiva.
+                </p>
+    </p>
+
+    <h2 id="tags">O que são Tags</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    <p>
+        <head>
+            Cabeça do html, aqui daremos o titulo da pagina
+
+            usando a tag (< title >)
+        </head>
+            <p>       
+                Corpo do html, aqui será exibido ao usuário oque foi desenvolvido na pagina Meu primeiro html
+            </p>
+
+            <p> Tag  (< i >) Deixa o texto em italico <i>(Texto em Italico)</i></p>
+    
+            <p> Tag  (< strong >) Deixa o texto em negrito <strong>(Texto em Negrito)</strong></p>
+    
+            <p> Tag  (< strong > < i >) Deixa o texto negrito italico <strong><i>(Texto em Negrito Italico)</i></strong></p>
+    
+            <p> Tag  (< strong > < u >) Deixa o texto negrito sublinhado <strong><u>(Texto Negrito sublinhado)</u></strong></p>
+    
+            <p> Tag (< mark >) Marca o texto <mark>(Texto Marcado)</mark> </p>
+    
+            <p> Tag (< input >) Cria um campo de imputação de dados (text=texo) (number=numerico) (color=paleta de cores)</p>
+                <p>Aqui foi utilizado o input com o atributo <mark>(type)</mark>para definir o tipo de dado que será inserido no campo, 
+                    Onde solicitamos o <mark>NOME</mark> com o atributo <mark>(name)</mark>, 
+                    Utilizado o atributo <mark>(placeholder)</mark> para criar uma mensagem orientativa ao usuário,
+                    Trazendo o seguinte resultado. <input type="text" name="nome" placeholder="Digite seu nome">
+                </p>
+                            
+            <p> Tag (< id >) identificador do elemento (id="titulo" Meu primeiro html)</p>
+    
+            <p> Tag (< style >) utilizada no css para formatação,
+                Aqui atribuimos a cor azul ao texto onde passamos o atributo (style), com o parametro (color: blue)
+                <strong style="color: blue;">Texto formatada em azul</strong></p>
+    
+            <p>tag (< class >) utilizada no css para formatação em classe com esse atribudo,
+                conseguimos definir um tipo de elemento no qual será aplicada a todos os scripts
+                que possuirem esse nome na classe, atributo (class="titulo da classe")
+                <strong class="titulo-principal">Atributo class</strong></p>
+    
+            <p> tag (< img >) utilizada para inserir imagem, atributo (width) utilizado para definir a largura da imagem,
+                seguido de (src) no qual inserimos o link ou diretorio de onde esta a imagem
+            <img width="250" src="https://cdn.motor1.com/images/mgl/lEmjGg/s3/chevrolet-tracker-rs-2024.jpg" />
+    
+    </p>
+
+    <h2 id="listas">Tipos de Listas</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+    
+    <p>
+        <h3>Listas Ordenadas e Não Ordenadas</h3>
+    <h4>Listas Ordenadas</h4>
+    <p> Criando uma lista ordenada (Lista em ordem numerica) </p>
+        Tag (< ol >) que e definida pela tag (< li >).
+        <p>Exemplo da estrutura de lista</p>
+        <p>< ol > < li >Item < / li > < / ol ></p>
+        Resultando
+        
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </p>
+
+    <p> Criando lista dentro de outra lista.
+    Aqui vemos a possibilidade de criar listas dentro de listas utilizando a tag (< ol >) dentro da tag (< li >)</p>
+    <p>Exemplo da estrutura de lista</p>
+    <p>< ol > < li >Item < ol > < li >Item principal.subitem < / li > < /ol > < / li> < / ol ></p>
+        <li>Item 4 com subitens
+            <ol>
+                <li>Item 4.1</li>
+                <li>Item 4.2</li>
+                <li>Item 4.3</li>
+            </ol>
+        </li>
+
+    <h4>Listas Não Ordenadas</h4>
+    <p> Criando uma lista não ordenada (Lista com marcadores) </p>
+    <p>Exemplo da estrutura de lista</p>
+    <p>< ul > < li >Item < / li > < / ul ></p>
+    Resultando
+     <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    </p>
+
+    
+</body>
+</html>
