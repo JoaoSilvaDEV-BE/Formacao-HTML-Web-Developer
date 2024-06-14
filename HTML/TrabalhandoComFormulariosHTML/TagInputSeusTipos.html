@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<p lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Cadastro</title>
+    </head>
+<p>
+<p>
+<h1>Tag Input e Seus Tipos </h1>
+<h2> Input </h2>
+O elemento HTML < input > é usado para criar controles interativos para formulários baseados na web para receber dados do
+    usuário.<br />
+    A semântica de um < input > varia consideravelmente dependendo do valor de seu atributo type.</p>
+
+        <u>Type:</u> O tipo de controle a ser exibido. O tipo padrão é text, se este atributo não for especificado. Os
+        valores possíveis são:</p>
+
+        <strong>button:</strong> Um botão sem comportamento padrão.</p>
+
+        <strong>checkbox:</strong> Uma caixa de marcação. Você deve usar o atributo value para definir o valor enviado
+        por este item.<br />
+        Use o atributo checked para indicar se o item está selecionado por padrão.<br />
+        Você também pode usar o atributo indeterminate para indicar que a caixa de marcação está em um estado
+        indeterminado<br />
+        (na maioria das plataformas, isso desenha uma linha horizontal cortando a caixa).</p>
+
+        <strong>color:</strong> Um controle para especificar cores. A interface de um seletor de cores não tem nenhuma
+        funcionalidade obrigatória a não ser aceitar cores simples em texto.</p>
+
+        <strong>date:</strong> Um controle para inserir uma data (ano, mês e dia, sem horário).</p>
+
+        <strong>datetime:</strong> Um controle para inserir data e horário (hora, minuto, segundo e fração de segundo)
+        baseado no fuso horário UTC.</p>
+
+        <strong>datetime-local:</strong> Um controle para inserir data e horário, sem fuso horário.</p>
+
+        <strong>email:</strong> Um campo para editar um endereço de e-mail. O valor do campo é validado para estar vazio
+        ou ter um único endereço de e-mail válido antes de ser enviado.</br>
+        As pseudoclasses CSS :valid e :invalid são aplicadas apropriadamente.</p>
+
+        <strong>file:</strong> Um controle que permite ao usuário selecionar um arquivo. Use o atributoaccept para
+        definir os tipos de arquivo que o controle pode selecionar. </p>
+
+        <strong>hidden:</strong> Um controle que não é exibido mas cujo valor é enviado ao servidor.</p>
+
+        <strong>image:</strong> Um botão gráfico para enviar o formulário. Você deve usar o atributo src para definir a
+        fonte da imagem e o atributo alt para definir um texto alternativo.</br>
+        Você pode usar os atributos height e width para definir o tamanho da imagem em pixels.</p>
+
+        <strong>month:</strong> Um controle para inserir mês e ano, sem fuso horário.</p>
+
+        <strong>number:</strong> Um controle para inserir um número de ponto flutuante.</p>
+
+        <strong>password:</strong> Um campo de texto com uma só linha cujo valor é obscurecido. Use o atributo maxlength
+        para especificar o comprimento máximo do valor que pode ser inserido.</p>
+
+        <strong>radio:</strong> Um botão de escolha. Você deve usar o atributo value para definir o valor a ser enviado
+        por este item.</br>
+        Use o atributo checked para indicar se este item deve estar selecionado por padrão. Botões de escolha que têm o
+        mesmo valor para o atributo name estão no mesmo "grupo de botões de escolha";</br>
+        apenas um botão de escolha no grupo pode estar selecionado de cada vez..</p>
+
+        <strong>range:</strong> Um controle para inserir um número cujo valor exato não é importante. Este tipo de
+        controle usa os seguintes valores padrão se os atributos correspondentes não forem especificados:</br>
+        min: 0</br>
+        max: 100</br>
+        value: min + (max-min)/2, ou min se max for menos que min</br>
+        step: 1</p>
+
+        <strong>reset:</strong> Um botão que faz o conteúdo do formulário voltar a ter seus valores padrão.</p>
+
+        <strong>search:</strong> Um campo de texto com uma só linha para digitar termos de busca; quebras de linha são
+        automaticamente removidas do valor entrado.</p>
+
+        <strong>tel:</strong> Um controle para inserir um número de telefone; quebras de linha são automaticamente
+        removidas do valor entrado, mas nenhuma outra sintaxe é imposta.</br>
+        Você pode usar atributos como pattern e maxlength para restringir os valores inseridos no controle. As
+        pseudoclasses CSS :valid e :invalid são aplicadas apropriadamente.</p>
+
+        <strong>text:</strong> Um campo de texto com uma só linha; quebras de linha são automaticamente removidas do
+        valor entrado.</p>
+
+        <strong>time:</strong> Um controle para inserir um horário sem fuso horário.</p>
+
+        <strong>url:</strong> Um campo para editar uma URL. O valor inserido é validado para ser vazio ou uma URL
+        absoluta válida antes de ser enviado.</br>
+        Quebras de linha e espaços em branco antes e após o valor inserido são automaticamente removidos.</br>
+        Você pode usar atributos como pattern e maxlength para restringir os valores inseridos no controle.</br>
+        As pseudoclasses CSS :valid e :invalid são aplicadas apropriadamente.</p>
+
+        <strong>week:</strong> Um controle para inserir uma data consistindo de ano da semana e número da semana sem
+        fuso horário. </p>
+
+        <label>Text: </label><input type="text" /><br />
+        <label>Number: </label><input type="number" min="0" step="5" max="99" /><br />
+        <label>Range: </label><input type="range" min="0" max="100" value="99" /><br />
+        <label>Color: </label><input type="color" /><br />
+        <label>E-mail: </label><input type="email" /><br />
+        <label>Url: </label><input type="url" /><br />
+        <label>Date: </label><input type="date" /><br />
+        <label>Week: </label><input type="week" /><br />
+        <label>Month: </label><input type="month" /><br />
+        <label>Checkbox: </label><input type="checkbox" /><br />
+        <label>Radio: </label><input type="radio" name="aceito" /><br />
+        <label>Hidden: </label><input type="hidden"/><br />
+        <label>File: </label><input type="file" multiple /><br />
+        <label>Search: </label><input type="search"/><br />
+        <label>Button: </label><input type="submit" value="Enviar" /><br />
+        </form>
+        </body>
+
+        </html>

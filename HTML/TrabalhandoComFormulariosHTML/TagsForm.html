@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<br="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Cadastro</title>
+    </head>
+    <br>
+    <h1>Form: O Elemento Formulário</h1>
+    <h3>O elemento HTML representa uma seção do documento contendo controles interativos para envio de informações</h3>
+
+    <strong>autocomplete:</strong> Indica se os elementos de entrada podem por padrão ter seus valores preenchidos
+    automaticamente pelo navegador</p>
+
+    <strong>name:</strong> O nome do formulário. O valor não deve ser a string vazia e deve ser único entre os
+    formelementos da coleção de formulários em que está, se houver.</p>
+
+    <strong>action</strong> A URL que processa o envio do formulário. Este valor pode ser substituído por um
+    formactionatributo em um elemento < p>, </br>
+        <u>
+            < input type="submit"> ou < input type="image">. Este atributo é ignorado quando method="dialog"definido.
+        </u></p>
+
+        <strong>method:</strong> O método HTTP para enviar o formulário. Os únicos métodos/valores permitidos são (sem
+        distinção entre maiúsculas e minúsculas):</br>
+        <ul>
+            <li><strong>post:</strong> O POST método; dados do formulário enviados como corpo da solicitação .</li>
+            <li><strong>get (padrão):</strong> O GET; dados do formulário anexados ao actionURL com um separador. Use
+                este método quando o formulário não tiver efeitos colaterais .</li>
+            <li><strong>dialog:</strong> quando o formulário está dentro de um < brg>, fecha a caixa de diálogo e faz
+                    com que um submitevento seja acionado no envio, sem enviar dados ou limpar o formulário.</br>
+                    Este valor é substituído por formmethodatributos em elementos < pn>, < input type="submit">ou <
+                                input type="image">.</li>
+        </ul>
+
+        <strong>target:</strong>Indica onde exibir a resposta após enviar o formulário. É um nome/palavra-chave para um
+        contexto de navegação (por exemplo, guia, janela ou iframe).</br>
+        As seguintes palavras-chave têm significados especiais:</p>
+        <ul>
+            <li><strong>_self (padrão):</strong> Carrega no mesmo contexto de navegação do atual.</li>
+            <li><strong>_blank:</strong> Carregue em um novo contexto de navegação sem nome. Isso fornece o mesmo
+                comportamento de setting rel="noopener"which not set window.opener.</li>
+            <li>
+                <stron>_parent:</stron> Carrega no contexto de navegação pai do atual. Se não houver pai, se comporta da
+                mesma forma que _self.
+            </li>
+            <li><strong>_top:</strong> Carrega no contexto de navegação de nível superior (ou seja, o contexto de
+                navegação que é ancestral do atual e não tem pai).</br>Se não houver pai, se comporta da mesma forma que
+                _self.</li>
+            <li><strong>_unfencedTop:</strong> Carrega a resposta de um formulário dentro de um quadro protegido
+                incorporado no quadro de nível superior</br>
+                (ou seja, atravessando além da raiz do quadro protegido, ao contrário de outros destinos reservados).
+                Disponível apenas dentro de estruturas cercadas.</li>
+        </ul>
+
+        <form name="Signup" onsubmit="alert('Enviei o Formulario')" autocomplete="off" method="post" action="#">
+            Nome: <input type="text" name="name" /><br />
+            Idade <input type="number" name="age" /><br />
+            Senha <input type="password" name="password" /><br>
+            <button type="submit">Send</button>
+        </form>
+        </body>
+
+        </html>
